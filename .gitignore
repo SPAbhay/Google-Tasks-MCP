@@ -1,0 +1,29 @@
+# General OS and IDE files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Node.js Server (Google_Tasks_MCP/gtasks-mcp-main/)
+# These paths are relative to the MCP/ root where this .gitignore file is.
+Google_Tasks_MCP/gtasks-mcp-main/node_modules/
+Google_Tasks_MCP/gtasks-mcp-main/dist/
+Google_Tasks_MCP/gtasks-mcp-main/npm-debug.log*
+Google_Tasks_MCP/gtasks-mcp-main/yarn-error.log
+
+# CRITICAL: Secrets for the Node.js Server
+Google_Tasks_MCP/gtasks-mcp-main/.gtasks-server-credentials.json
+Google_Tasks_MCP/gtasks-mcp-main/gcp-oauth.keys.json
+
+# Python Client (Test_Client/)
+Test_Client/.venv/
+Test_Client/__pycache__/
+Test_Client/**/*.pyc # Matches .pyc files in Test_Client and any of its subdirectories
+Test_Client/pip-wheel-metadata/
+Test_Client/.pytest_cache/
+Test_Client/.ruff_cache/
+
+# Word documents (optional - remove if you want to track them)
+# If you want to track .docx files, delete the line below
+*.docx
